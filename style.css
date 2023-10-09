@@ -2,6 +2,14 @@ body {
 display: flex;
 padding: 0;
 margin: 0;
+
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('Norse-Bold.otf') 
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .left-side {
@@ -10,9 +18,23 @@ margin: 0;
 	background-image: url("green.jpg"); 
 	background-size: cover;
 }
+
+.title-bar {
+	display: flex;
+	background-color: rgba(0, 0, 0, .5);
+	margin-top: 20%;
+}
+
+.title-bar img {
+	height: 60px;
+	width: 50px;
+	margin: 10vh;
+}
+
 h1.logo {
 	color: white;
-	background-color: rgba(0, 0, 0, .5);
+	font-size: 3rem;
+	font-family: 'MyFont', sans-serif;
 }
 
 .right-side {
@@ -29,6 +51,14 @@ h1.logo {
 
 input {
 	width: 100%;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+input:focus {
+	outline: none !important;
+	border: 1px solid blue;
+	box-shadow: 0px 5px 5px #c6c6c6;
 }
 form {
 	display: flex;
